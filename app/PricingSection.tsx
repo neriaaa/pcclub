@@ -41,7 +41,7 @@ export default function PricingSection() {
               key={idx}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: idx * 0.2 }}
               className={`relative rounded-3xl p-8 glass-panel flex flex-col ${
                 plan.highlight ? 'border-primary/50 shadow-[0_0_30px_rgba(124,58,237,0.3)] scale-105 z-10' : 'border-white/10'
@@ -70,11 +70,14 @@ export default function PricingSection() {
                 ))}
               </ul>
 
-              <button className={`w-full py-4 rounded-xl font-bold transition-all duration-300 ${
-                plan.highlight 
-                  ? 'bg-gradient-to-r from-primary to-pink hover:shadow-lg hover:shadow-primary/50 text-white' 
-                  : 'bg-white/10 hover:bg-white/20 text-white'
-              }`}>
+              <button 
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                className={`w-full py-4 rounded-xl font-bold transition-all duration-300 ${
+                  plan.highlight 
+                    ? 'bg-gradient-to-r from-primary to-pink hover:shadow-lg hover:shadow-primary/50 text-white' 
+                    : 'bg-white/10 hover:bg-white/20 text-white'
+                }`}
+              >
                 Выбрать тариф
               </button>
             </motion.div>

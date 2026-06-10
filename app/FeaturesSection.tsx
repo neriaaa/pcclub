@@ -40,7 +40,7 @@ export default function FeaturesSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {features.map((feature, idx) => (

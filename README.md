@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber Club 🎮
 
-## Getting Started
+Веб-приложение для киберклуба, разработанное с использованием Next.js.
 
-First, run the development server:
+## 📋 Описание проекта
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Проект представляет собой современный интерфейс для киберспортивного клуба. 
+Здесь клиенты могут ознакомиться с услугами, забронировать игровое место, посмотреть тарифы и многое другое.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Технологии
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Фреймворк:** Next.js (App Router)
+* **Платформа:** Node.js
+* **Шрифты:** `next/font` (используется шрифт Geist)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Установка и запуск
 
-## Learn More
+1. Установите зависимости:
+   ```bash
+   npm install
+   # или
+   yarn install
+   # или
+   pnpm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Запустите сервер для разработки:
+   ```bash
+   npm run dev
+   # или
+   yarn dev
+   # или
+   pnpm dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Откройте http://localhost:3000 в вашем браузере, чтобы увидеть результат.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Вы можете начать редактировать главную страницу, изменяя файл `app/page.tsx`. Страница автоматически обновится при сохранении.
 
-## Deploy on Vercel
+## 🛠 Доступные скрипты
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` — запуск приложения в режиме разработки.
+- `npm run build` — сборка оптимизированной версии приложения для продакшена.
+- `npm run start` — запуск собранного приложения.
+- `npm run lint` — проверка кода линтером (ESLint).

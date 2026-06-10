@@ -1,9 +1,12 @@
 'use client';
 
 import { motion, useScroll, useSpring } from "framer-motion";
-import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import PricingSection from "@/components/PricingSection";
+import HeroSection from "./HeroSection";
+import AboutSection from "./AboutSection";
+import GallerySection from "./GallerySection";
+import FeaturesSection from "./FeaturesSection";
+import PricingSection from "./PricingSection";
+import ContactSection from "./ContactSection";
 
 export default function Home() {
   // Анимированный Scroll Progress Bar
@@ -23,8 +26,11 @@ export default function Home() {
       />
       
       <HeroSection />
+      <AboutSection />
+      <GallerySection />
       <FeaturesSection />
       <PricingSection />
+      <ContactSection />
     </main>
   );
 }
